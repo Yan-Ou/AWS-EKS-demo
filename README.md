@@ -142,8 +142,9 @@ kubectl apply -f ingress/webapp-ingress.yaml
 ```
 
 - Test if the simplewebapp service is accessible at:
+```
   https://<ELB DNS>/simplewebapp
-
+```
 ## Simplewebapp source code folder
 
 - root folder contains the go source code, Dockerfile to build 'simplewebapp' docker image, and Jenkinsfile for the pipeline definition
