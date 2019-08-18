@@ -127,8 +127,9 @@ kubectl apply -f ingress/jenkins-ingress.yaml
 - Add Jenkins kubernetes service account from Jenkins UI
 
 - Test if Jenkins works properly at:
+```
   https://<ELB DNS>/jenkins/
-
+```
 - Jenkins pipeline is defined in Jenkinsfile, basically it performs the following tasks:
   1. Build go source code to a docker image by using ouyannz/golang-build:dev docker container
   2. Push the docker image to docker hub (or any other repository)
